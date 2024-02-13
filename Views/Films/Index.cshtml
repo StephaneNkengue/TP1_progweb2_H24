@@ -1,0 +1,20 @@
+﻿@model IEnumerable<TP1.Models.Film>
+
+
+
+@if (Model.Count() == 0)
+{
+    <div style="height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+        <p style="font-size: 40px; text-align: center;">
+            Nous n'avons aucun film pour l'instant
+        </p>
+    </div>
+}
+else
+{
+    @await Html.PartialAsync("~/Views/Shared/_FilmInfoPartial.cshtml", Model)
+}

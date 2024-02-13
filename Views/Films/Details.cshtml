@@ -1,0 +1,18 @@
+﻿@model TP1.Models.Film
+
+@if (Model == null)
+{
+    <div style="height: 100%;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                align-items: center;">
+        <p style="font-size: 35px; text-align: center;">
+            Aucun film trouvé
+        </p>
+    </div>
+}
+else
+{
+    <h2 style="text-align: center; font-size: 35px">@Model.Titre @Model.Categorie @Model.DateSortie.Year</h2>
+}

@@ -3,15 +3,25 @@ using TP1.Models;
 
 namespace TP1.Controllers
 {
-    public class FilmController : Controller
+    public class FilmsController : Controller
     {
-        public IActionResult Index()
+        public IActionResult Index(int? annee)
         {
-            return View();
+            if (annee.HasValue)
+            {
+                var FilmsParAnne = Films.Where(f => f.DateSortie.Year == annee).ToList();
+                if (FilmsParAnne == null)
+                {
+                    return NotFound();
+                }
+                return View(FilmsParAnne);
+            }
+
+            return View(Films);
         }
 
-        internal static readonly List<Film> Films =
-        [
+        internal static readonly List<Film> Films = new()
+        {
             new() { FilmId = 1, Titre = "Inception", DateSortie = new DateTime(2010, 8, 17), Categorie = "Science-fiction, Action", CheminImage = "/Images/Inception.jpg", BudgetRealisation = 160000000 },
             new() { FilmId = 2, Titre = "The Dark Knight", DateSortie = new DateTime(2008, 3, 7), Categorie = "Action, Crime, Drame", CheminImage = "/Images/the_Dark_knight.jpg", BudgetRealisation = 185000000 },
             new() { FilmId = 3, Titre = "Titanic", DateSortie = new DateTime(1997, 11, 19), Categorie = "Drame, Romance", CheminImage = "/Images/Titanic.jpg", BudgetRealisation = 200000000 },
@@ -22,6 +32,18 @@ namespace TP1.Controllers
             new() { FilmId = 8, Titre = "Jurassic Park", DateSortie = new DateTime(1993, 3, 7), Categorie = "Science-fiction, Aventure", CheminImage = "/Images/Jurassic_park.jpg", BudgetRealisation = 63000000 },
             new() { FilmId = 9, Titre = "Harry Potter à l'école des sorciers", DateSortie = new DateTime(2001, 10, 30), Categorie = "Fantastique, Aventure", CheminImage = "/Images/HarryPoter.jpg", BudgetRealisation = 125000000 },
             new() { FilmId = 10, Titre = "Le Seigneur des anneaux : La Communauté de l'anneau", DateSortie = new DateTime(2001, 3, 7), Categorie = " Fantastique, Aventure", CheminImage = "/Images/le_seigneur_des_anneaux.jpg", BudgetRealisation = 93000000 }
-        ];
+        };
+
+        public IActionResult Details(int? id)
+        {
+            if (id.HasValue)
+            {
+                Film? FilmById = Films.FirstOrDefault(f => f.FilmId == id);
+                return View(FilmById);
+
+            }
+            return NotFound();
+        }
+
     }
 }
