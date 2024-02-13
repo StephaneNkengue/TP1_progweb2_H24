@@ -45,6 +45,10 @@
       "PackagePath": "staticwebassets\\Images\\the_Dark_knight.jpg"
     },
     {
+      "Id": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\wwwroot\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\css\\bootstrap.css"
+    },
+    {
       "Id": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

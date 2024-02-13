@@ -6,7 +6,6 @@
 <div class="container row">
     @foreach (var film in Model)
     {
-
         <div class="card row-col-md-6 m-3" style="max-width: 540px;">
             <a style="text-decoration: none" href="@Url.Action("Details", "Films", new {id = film.FilmId})">
                 <div class="row g-0">
@@ -38,7 +37,6 @@
                 </div>
             </a>
         </div>
-
     }
 </div>
 

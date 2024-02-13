@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "MW+l5sUqVTs9gIsl//j3nAXrLs7305MLkXsNnjeho84=",
+  "Hash": "/ePZe/4RJleoyyh7XT5preSzzLy4Vv/I9TTE5oQWM7I=",
   "Source": "TP1",
   "BasePath": "_content/TP1",
   "Mode": "Default",
@@ -53,6 +53,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\TP1.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\wwwroot\\css\\bootstrap.css",
+      "SourceId": "TP1",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\wwwroot\\",
+      "BasePath": "_content/TP1",
+      "RelativePath": "css/bootstrap.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\bootstrap.css"
     },
     {
       "Identity": "C:\\Users\\Stéphane Nkengue\\source\\hiver24\\TP1\\wwwroot\\css\\site.css",
