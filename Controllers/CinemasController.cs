@@ -3,15 +3,11 @@ using TP1.Models;
 
 namespace TP1.Controllers
 {
-    public class CinemaController : Controller
+    public class CinemasController : Controller
     {
-        public IActionResult Index()
-        {
-            return View();
-        }
 
 
-        static readonly List<Cinema> listeCinemas = new List<Cinema>()
+        static readonly List<Cinema> Cinemas = new()
         {
             new () {CinemaId = 1, Nom="Guzzo", DateCreation = new DateTime(1974, 7, 9), NombreSalle = 14, Courriel  = "Guzzo@gmail.com", Telephone = "8198214481", Ville = "Sherbrooke"},
             new () { CinemaId = 2, Nom = "Cineplex", DateCreation = new DateTime(1999, 10, 4), NombreSalle=12, Courriel = "Cineplex@gmail.com", Telephone = "4507766908", Ville = "Granby"},
@@ -24,5 +20,37 @@ namespace TP1.Controllers
             new () { CinemaId = 9, Nom = "Cinema Fleur de Lys", DateCreation = new DateTime(2000, 8, 4), NombreSalle=15, Courriel = "fleurdelys@gmail.com", Telephone = "8193766154", Ville = "Trois-Rivières"},
             new () { CinemaId = 10, Nom = "cinema des chutes", DateCreation = new DateTime(1998, 1, 4), NombreSalle=9, Courriel = "cinedeschutes@gmail.com", Telephone = "4188315071", Ville = "Saint Nicolas"},
         };
+
+
+        public IActionResult Index(string? ville)
+        {
+            if (!string.IsNullOrEmpty(ville))
+            {
+                var cinemasParVille = Cinemas.Where(c => c.Ville.ToLower() == ville.ToLower()).ToList();
+
+                if (cinemasParVille == null)
+                {
+                    // Absence de cinéma ici
+                    return NotFound("404 Not Found");
+                }
+
+                return View(cinemasParVille);
+            }
+            return View(Cinemas);
+        }
+
+        [Route("Cinemas/Edit/{id?}")]
+        public IActionResult Edit(int? id)
+        {
+            var cinema = Cinemas.FirstOrDefault(c => c.CinemaId == id);
+            if (cinema == null)
+            {
+                // Absence de cinéma ici
+                return NotFound("404 Not Found");
+            }
+            return View(cinema);
+        }
+
+
     }
 }

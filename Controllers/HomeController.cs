@@ -7,18 +7,18 @@ namespace TP1.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly List<Film> MaListeFIlm;
+        private readonly List<Film> MaListeFilm;
 
         public HomeController(ILogger<HomeController> logger)
         {
 
-            MaListeFIlm = FilmController.Films.OrderByDescending(f => f.DateSortie.Year).Take(3).ToList();
+            MaListeFilm = FilmController.Films.OrderByDescending(f => f.DateSortie.Year).Take(3).ToList();
             _logger = logger;
         }
 
         public IActionResult Index()
         {
-            return View(MaListeFIlm);
+            return View(MaListeFilm);
         }
 
 
