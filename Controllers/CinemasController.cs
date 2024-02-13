@@ -3,7 +3,7 @@ using TP1.Models;
 
 namespace TP1.Controllers
 {
-    public class CinemaController : Controller
+    public class CinemasController : Controller
     {
         public IActionResult Index()
         {
@@ -11,7 +11,7 @@ namespace TP1.Controllers
         }
 
 
-        static readonly List<Cinema> listeCinemas = new List<Cinema>()
+        internal static readonly List<Cinema> Cinemas = new()
         {
             new () {CinemaId = 1, Nom="Guzzo", DateCreation = new DateTime(1974, 7, 9), NombreSalle = 14, Courriel  = "Guzzo@gmail.com", Telephone = "8198214481", Ville = "Sherbrooke"},
             new () { CinemaId = 2, Nom = "Cineplex", DateCreation = new DateTime(1999, 10, 4), NombreSalle=12, Courriel = "Cineplex@gmail.com", Telephone = "4507766908", Ville = "Granby"},

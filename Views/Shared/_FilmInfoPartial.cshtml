@@ -1,0 +1,44 @@
+﻿@model IEnumerable<TP1.Models.Film>
+
+@{
+}
+
+<div class="container row">
+    @foreach (var film in Model)
+    {
+
+        <div class="card row-col-md-6 m-3" style="max-width: 540px;">
+            <a style="text-decoration: none" href="@Url.Action("Details", "Films", new {id = film.FilmId})">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src=@film.CheminImage class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <table class="table table-borderless">
+                                <tr>
+                                    <td class="text-end">Titre : </td>
+                                    <td>@film.Titre </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end">Date de sortie : </td>
+                                    <td>@film.DateSortie.Year </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end">Catégorie : </td>
+                                    <td>@film.Categorie </td>
+                                </tr>
+                                <tr>
+                                    <td class="text-end">Budget : </td>
+                                    <td>@film.BudgetRealisation $ </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    }
+</div>
+

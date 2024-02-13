@@ -12,7 +12,7 @@ namespace TP1.Controllers
         public HomeController(ILogger<HomeController> logger)
         {
 
-            MaListeFIlm = FilmController.Films.OrderByDescending(f => f.DateSortie.Year).Take(3).ToList();
+            MaListeFIlm = FilmsController.Films.OrderByDescending(f => f.DateSortie.Year).Take(3).ToList();
             _logger = logger;
         }
 
