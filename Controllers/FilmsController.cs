@@ -36,13 +36,18 @@ namespace TP1.Controllers
 
         public IActionResult Details(int? id)
         {
-            if (id.HasValue)
-            {
-                Film? FilmById = Films.FirstOrDefault(f => f.FilmId == id);
-                return View(FilmById);
 
+            Film? FilmById = Films.FirstOrDefault(f => f.FilmId == id);
+
+            if (FilmById == null)
+            {
+                return NotFound("404 Not Found");
             }
-            return NotFound();
+
+            return View(FilmById);
+
+
+
         }
 
     }
