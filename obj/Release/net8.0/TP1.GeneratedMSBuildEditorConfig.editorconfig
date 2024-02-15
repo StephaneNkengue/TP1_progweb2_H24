@@ -9,59 +9,59 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = TP1
 build_property.RootNamespace = TP1
-build_property.ProjectDir = C:\Users\tchok\source\repos\TP1_progweb2_H24\
+build_property.ProjectDir = C:\Users\tchok\OneDrive\Bureau\TRM\Cégep de Granby\Hiver 2024\Programmation Web 2\TP1\TP1_progweb2_H24\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\tchok\source\repos\TP1_progweb2_H24
+build_property.MSBuildProjectDirectory = C:\Users\tchok\OneDrive\Bureau\TRM\Cégep de Granby\Hiver 2024\Programmation Web 2\TP1\TP1_progweb2_H24
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Cinemas/Edit.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Cinemas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Cinemas/Index.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Cinemas/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2luZW1hc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Films/Details.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Films/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Films/Index.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Films/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmlsbXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Home/Index.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Shared/Error.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Shared/_FilmInfoPartial.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Shared/_FilmInfoPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9GaWxtSW5mb1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Shared/_NavbarPartial.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Shared/_NavbarPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9OYXZiYXJQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/_ViewImports.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/_ViewStart.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/tchok/source/repos/TP1_progweb2_H24/Views/Shared/_Layout.cshtml]
+[C:/Users/tchok/OneDrive/Bureau/TRM/Cégep de Granby/Hiver 2024/Programmation Web 2/TP1/TP1_progweb2_H24/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-iesz7thj5t

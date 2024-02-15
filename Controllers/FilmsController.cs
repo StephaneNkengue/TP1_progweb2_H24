@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP1.Models;
+using TP1.ViewModels;
 
 namespace TP1.Controllers
 {
@@ -12,7 +13,7 @@ namespace TP1.Controllers
                 var FilmsParAnne = Films.Where(f => f.DateSortie.Year == annee).ToList();
                 if (FilmsParAnne == null)
                 {
-                    return NotFound();
+                    return NotFound("404 Not Found");
                 }
                 return View(FilmsParAnne);
             }
@@ -37,7 +38,15 @@ namespace TP1.Controllers
         public IActionResult Details(int? id)
         {
 
-            Film? FilmById = Films.FirstOrDefault(f => f.FilmId == id);
+            FilmVM? FilmById = Films.Select(
+                f => new FilmVM
+                {
+                    FilmId = f.FilmId,
+                    Titre = f.Titre,
+                    DateSortie = f.DateSortie,
+                    Categorie = f.Categorie
+                })
+                .FirstOrDefault(f => f.FilmId == id);
 
             if (FilmById == null)
             {

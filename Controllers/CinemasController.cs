@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using TP1.Models;
+using TP1.ViewModels;
 
 namespace TP1.Controllers
 {
@@ -30,7 +31,6 @@ namespace TP1.Controllers
 
                 if (cinemasParVille == null)
                 {
-                    // Absence de cinéma ici
                     return NotFound("404 Not Found");
                 }
 
@@ -42,7 +42,16 @@ namespace TP1.Controllers
         [Route("Cinemas/Edit/{id?}")]
         public IActionResult Edit(int? id)
         {
-            var cinema = Cinemas.FirstOrDefault(c => c.CinemaId == id);
+            CinemaVM? cinema = Cinemas.Select(
+                f => new CinemaVM
+                {
+                    CinemaId = f.CinemaId,
+                    Nom = f.Nom,
+                    Ville = f.Ville
+                }).FirstOrDefault(c => c.CinemaId == id);
+
+
+
             if (cinema == null)
             {
                 // Absence de cinéma ici
